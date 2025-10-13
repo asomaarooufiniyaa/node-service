@@ -34,6 +34,7 @@ jobs:
           host: ${{ secrets.AWS_HOST }}
           username: ubuntu
           key: ${{ secrets.AWS_KEY }}
+          debug: true
           script: |
             docker pull asomaaroufiniyaa/node-service:latest
             docker stop node-service || true
