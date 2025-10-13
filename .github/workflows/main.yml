@@ -39,4 +39,4 @@ jobs:
             docker pull asomaaroufiniyaa/node-service:latest
             docker stop node-service || true
             docker rm node-service || true
-            docker run -d -p 3000:3000 --name node-service asomaaroufiniyaa/node-service:latest
+            docker run -d -p 3000:3000 --name node-service --env-file .env asomaaroufiniyaa/node-service:latest
