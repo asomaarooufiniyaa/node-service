@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello, world of techs!');
+  res.send('Hello , World of techs!');
 });
 
 app.get('/secret', (req, res) => {
@@ -23,6 +23,6 @@ app.get('/secret', (req, res) => {
     res.set('WWW-Authenticate', 'Basic realm="Restricted Area"');
     res.status(401).send('Invalid credentials');
   }
-});
+});``
 
 app.listen(3000, () => console.log('Server running on port 3000'));
